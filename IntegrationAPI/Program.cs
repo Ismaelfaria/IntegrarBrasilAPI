@@ -15,6 +15,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<IAdressService, AdressService>();
 builder.Services.AddSingleton<IBankService, BankService>();
+builder.Services.AddSingleton<ICnpjService, CnpjService>();
 builder.Services.AddSingleton<IBrasilApi, BrasilApiRest>();
 
 builder.Services.AddAutoMapper(typeof(AdressMapping));
